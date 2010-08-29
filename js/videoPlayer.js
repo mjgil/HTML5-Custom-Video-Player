@@ -159,7 +159,6 @@
 				
 				videoPlayer.playPause();
 				
-				//blockTextSelection();
 				document.onmousemove = function(e) {
 				  videoPlayer.setPlayProgress( e.pageX );
 				}
