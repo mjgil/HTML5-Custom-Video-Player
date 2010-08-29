@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Custom HTML5 Video Player</title>
+   <link rel="stylesheet" href="css/videoPlayer.css" />
+   
+   <style>
+       /* Unnecessary for video functionality. Feel free to remove. */
+	   body { background: #666; font-family: 'Myriad-Pro', helvetica, sans-serif; }
+	   #container { width: 1000px; margin: auto; margin-top: 30px;}
+	   h1 { font-size: 50px; color: #777; text-align: center; text-shadow: 0 -1px 0 black, 0 1px 0 black;}
+   </style>
+
+</head>
+<body>
+
+<div id="container">
+
+	<h1> HTML5 Video </h1>
+
+	<div id="video_container">
+		<video controls width=1000 preload poster=poster.jpg>
+			<source src="http://nettuts.s3.amazonaws.com/763_sammyJSIntro/trailer_test.mp4" type="video/mp4">
+			<source src="http://nettuts.s3.amazonaws.com/763_sammyJSIntro/trailer_test.ogg" type="video/ogg">
+			
+			<object width="960" height="745"><param name="movie" value="http://www.youtube.com/v/2AzuX9Lrjv4&amp;hl=en_US&amp;fs=1?color1=0x3a3a3a&amp;color2=0x999999&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/2AzuX9Lrjv4&amp;hl=en_US&amp;fs=1?color1=0x3a3a3a&amp;color2=0x999999&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="960" height="745"></embed></object>
+		</video>
+		
+		<div id="videoControls">
+			<button id="play" title="Play"> &#x25BA; </button>
+			
+			<div id="progress"> 
+				<div id="progress_box"> 
+						<span id="play_progress"></span>
+				</div> 
+			</div>
+			
+			<button id="fullScreen" title="FullScreen Toggle">  FS </button>
+			<a href="http://www.tutsplus.com"><img src="img/tuts_logo.png" alt="Tuts" id="video_tutsLogo" /></a>
+		</div>
+	</div>
+
+</div>	
+
+<script src="js/videoPlayer.js"></script>
+
+</body>
+</html>
